@@ -1,0 +1,29 @@
+
+<!-- Preloader Start-->
+
+
+<main class="login-body" style="background: black;">
+<!-- Login Admin -->
+<form autocomplete="off" >
+    
+    <div class="login-form" style="margin-top: -30%;">
+        <!-- logo-login -->
+       
+        <h2 style="color: rgb(209, 148, 5);">Login Here</h2>
+        <div class="form-input">
+            <label for="name">Email</label>
+            <input type="email" name="email" formControlName="email" autocomplete="off" class="form-control input-sm" placeholder="Email">  </div>
+        <div class="form-input">
+            <label for="Password">Password</label>
+            <input type="password" name="Password" formControlName="password" autocomplete="off" class="form-control input-sm" placeholder="Password"> </div>
+        <div class="form-input pt-30">
+            <input type="submit" routerLink="/dashboard" value="login">
+        </div>
+        <a type="submit"  >Login</a>
+        <!-- Forget Password -->
+        <a  routerLink="/register">Forget Password</a>
+        <!-- Forget Password -->
+          </div>
+</form>
+<!-- /end login form -->
+</main>
