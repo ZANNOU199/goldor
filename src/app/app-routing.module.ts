@@ -6,7 +6,7 @@ import {HomeComponent} from './home/home.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import{DashboardComponent}from './dashboard/dashboard.component';
-import {PerfectComponent}from './perfect/perfect.component';
+import {App1SharedModule}  from '../../projects/app1/src/app/app.module';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   {path:'about',component:AboutComponent},
@@ -15,16 +15,16 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'perfect',component:PerfectComponent},
+  {path: 'app1', loadChildren: '../../projects/app1/src/app/app.module#App1SharedModule'},
+  
    { path: '**', redirectTo: 'home', pathMatch: 'full' },
 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    onSameUrlNavigation: 'reload'
-  }),
+  imports: [RouterModule.forRoot(routes),
   HttpClientModule,
+  App1SharedModule.forRoot(),
 
 
 ],

@@ -14,7 +14,7 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {HashLocationStrategy, Location, LocationStrategy} from '@angular/common';
-import { PerfectComponent } from './perfect/perfect.component';
+import {App1SharedModule}  from '../../projects/app1/src/app/app.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,14 +26,14 @@ import { PerfectComponent } from './perfect/perfect.component';
     AboutComponent,
     ContactComponent,
     DashboardComponent,
-    PerfectComponent
+   
   ],
   imports: [
     
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    
+    App1SharedModule.forRoot(),
     FormsModule,
     ReactiveFormsModule
   ],

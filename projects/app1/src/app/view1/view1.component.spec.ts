@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PerfectComponent } from './perfect.component';
+import { View1Component } from './view1.component';
 
-describe('PerfectComponent', () => {
-  let component: PerfectComponent;
-  let fixture: ComponentFixture<PerfectComponent>;
+describe('View1Component', () => {
+  let component: View1Component;
+  let fixture: ComponentFixture<View1Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PerfectComponent ]
+      declarations: [ View1Component ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PerfectComponent);
+    fixture = TestBed.createComponent(View1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
